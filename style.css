@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: navajowhite;
+}
+
+.row{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: white solid;
+}
+
+.col-6{
+    width: 100%;
+    padding: 0%;
+
+}
+
+.center{
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+}
+
+button{
+    align-content: flex-end;
+}
+
+header{
+    text-align: center;
+    color: firebrick;
+}
+
+ h2{
+    color: firebrick;
+ }
+
+ h3{
+    color: firebrick;
+ }
