@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Comparing Windows, MacOS, and Linux</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><h1>Comparing Windows, MacOS, and Linux</h1></header>
+    
+    <strong><h2>Files and Direction, Naming convention, and the file allocation</h2> </strong>
+    
+    <h2><strong>Directory structure</strong></h2>
+<ul>
+        <li><strong>Windows:</strong>Windows uses a drive-letter system. Each partition                        is labeled, such as C:\, D:\. Files are organized in a hierarchical structure using backslashes (\) as separators. Example: C:\Users\Student\Documents. The root directory is typically the drive letter.</li>
+        <li><strong>MacOS:</strong>macOS uses a UNIX-like file system. It uses forward slashes (/) as separators and starts from the root directory /. Example: /Users/student/Documents. Drives are mounted within /Volumes/.</li>
+        <li><strong>Linux:</strong> Similar to macOS, Linux uses a UNIX-style hierarchy. It also uses / as a separator and starts from /. Example: /home/student/Documents. All file systems and drives are mounted within this tree (e.g., /mnt or /media).</li>
+</ul>
+
+<h2><strong>Naming Conventions</strong></h2>
+<ul>
+    <li><strong>Window:</strong>Windows is not case-sensitive, meaning that File.txt and file.txt are treated as the same file. It also has a list of restricted characters that cannot be used in file or folder names, such as \ / : * ? " > |.</li>
+    <li><strong>macOS:</strong> is usually case-insensitive as well, although it can be set to be case-sensitive. For example, on most Mac setups, file.txt and File.txt are considered the same, but in some setups, they might be different. One character not allowed in macOS filenames is the colon :.</li>
+    <li><strong>Linux:</strong>Linux is case-sensitive by default. That means file.txt, File.txt, and FILE.TXT are all treated as separate files. The only major restriction in Linux is that filenames cannot contain the forward slash / because it is used to separate directories.</li>
+</ul>
+
+<h2><strong>File system</strong></h2>
+<p>Each operating system uses its own preferred file system for formatting storage devices.</p>
+    <ul>
+        <li><strong>Windows:</strong>Windows primarily uses the NTFS file system, which supports file permissions, compression, and recovery features. However, it still supports older file systems like FAT32 and exFAT. These are mostly used on removable drives like USB flash drives and SD cards due to their wide compatibility.</li>
+        <li><strong>macOS:</strong>macOS uses APFS (Apple File System) as its modern file system, especially for solid-state drives (SSDs). Older versions of macOS used HFS+. macOS can also read and write to FAT32 and exFAT, which is helpful when exchanging files between Mac and Windows systems.</li>
+        <li><strong>Linux:</strong>Linux commonly uses the ext4 file system, which is stable and powerful. Older Linux systems may still use ext3 or ext2. Like macOS, Linux can access FAT32 and exFAT drives using built-in or additional drivers.</li>
+    </ul>
+<p>The File Allocation Table (FAT) is an older file system originally used by MS-DOS. Despite its age, FAT is still used today—mostly as FAT32 or exFAT—on USB drives and other removable media because it works with almost all operating systems. This makes it useful when sharing files between Windows, Mac, and Linux.</p>
+
+<ol>
+    <li><h2>Executable file Extension</h2></li>
+</ol>
+<p><strong>Executable file types</strong></p>
+<p>Each operating system has its own formats for executable files—those that are used to install or run programs.</p>
+</br>
+<p><strong>Window</strong></p>
+<ul>
+    <li>.exe – The most common executable format in Windows. Double-clicking this file runs the program.</li>
+    <li>.bat – A batch file containing command-line instructions and runs in Command Prompt (CMD).</li>
+    <li>.cmd – Similar to .bat, used for running scripts in the command-line environment.</li>
+    <li>.msi – Microsoft Installer file used to install software packages.</li>
+    <li>.ps1 – PowerShell script file. Runs advanced tasks in the PowerShell environment.</li>
+</ul>
+
+<p><strong>macOS:</strong></p>
+<ul>
+<li>.app – Application package. Appears as one file but is actually a folder containing all necessary program resources.</li>
+<li>.command – A script file that can be double-clicked to run Terminal commands.</li>
+<li>.sh – Shell script. Used in Terminal to run command-line instructions.</li>
+<li>Executable binaries – Files without extensions that are set as executable and launched from the Terminal.</li>
+</ul>
+
+<p><strong>Linux:</strong></p>
+<ul>
+    <li>.sh – Shell script file. Commonly used to run commands in the terminal.
+</li>
+    <li>.run – Often used for software installers. Requires execute permission.
+</li>
+    <li>.bin – Binary file that can run as a program when marked executable.
+</li>
+    <li>No extension – In Linux, any file can be made executable with chmod +x, even if it has no extension.
+</li>
+</ul>
+
+<h2><strong>Script Execution</strong></h2>
+<p>Each operating system has a different method and environment for running command or script files. Below is how scripts are executed on each platform:
+</p>
+<ul>
+    <li><strong>Windows:</strong> Scripts like .bat and .cmd files are run using Command Prompt (CMD). .ps1 files are run using PowerShell, which is more powerful than CMD and supports advanced automation.</li>
+    <li><strong>MacOS:</strong>Scripts such as .sh or .command files are executed using the Terminal.macOS uses bash or zsh shell environments.You can run a script by typing ./script.sh or bash script.sh after making it executable.</li>
+    <li><strong>Linux:</strong>Linux also uses the Terminal for script execution.Shell scripts (e.g., .sh, .run, .bin) are executed using bash or another shell (e.g., zsh).Scripts are run with ./filename after granting permission using chmod +x filename.</li>
+</ul>
+
+<form action="index.html">
+<button>click to show next page</button>
+</form>
+</body>
+
+<footer><p>&copy;2025 Melokuhle's blog. all right reserved</p></footer>
