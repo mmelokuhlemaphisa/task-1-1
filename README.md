@@ -1,1 +1,1 @@
-COMPARING window, macOS, linux
+This blog post compares the Windows, macOS, and Linux operating systems. It focuses on how each OS handles files, directories, naming rules, file systems (including FAT), executable file types, and script execution using tools like PowerShell, Terminal, and shell environments. 
