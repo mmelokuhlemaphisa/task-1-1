@@ -1,0 +1,1 @@
+COMPARING window, macOS, linux
