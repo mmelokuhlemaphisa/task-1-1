@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background: navajowhite;
-    border: solid black 1em;
+    /* border: solid black 1em; */
 }
 
 .row{
@@ -46,3 +46,11 @@ header{
     border: white;
  }
 
+ .container{
+    padding: 20px;
+ }
+
+ .footerr{
+    text-align: center;
+    background-color: white;
+ }
